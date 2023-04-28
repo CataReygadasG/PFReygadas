@@ -1,0 +1,840 @@
+section {
+  display: grid;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .card1 {
+    grid-area: 1/1/2/2;
+  }
+  .card2 {
+    grid-area: 2/1/3/2;
+  }
+  .card3 {
+    grid-area: 3/1/4/2;
+  }
+  .card4 {
+    grid-area: 4/1/4/2;
+  }
+}
+.galeria1 .card1 {
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(165, 153, 116);
+}
+.galeria1 .card1 .card__img {
+  background-image: url(../img/1.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.galeria1 .card1 .card__descripcion {
+  color: rgb(94, 86, 67);
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.galeria1 .card1 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.galeria1 .card1 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+.galeria1 .card2 {
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(165, 153, 116);
+}
+.galeria1 .card2 .card__img2 {
+  background-image: url(../img/2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  object-fit: fill;
+}
+.galeria1 .card2 .card__descripcion {
+  color: rgb(94, 86, 67);
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.galeria1 .card2 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.galeria1 .card2 .card__button:hover {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+}
+.galeria1 .card3 {
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(165, 153, 116);
+}
+.galeria1 .card3 .card__img3 {
+  background-image: url(../img/4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  object-fit: fill;
+}
+.galeria1 .card3 .card__descripcion {
+  color: rgb(94, 86, 67);
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.galeria1 .card3 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.galeria1 .card3 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+.galeria1 .card4 {
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(165, 153, 116);
+}
+.galeria1 .card4 .card__img4 {
+  background-image: url(../img/anillo1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  object-fit: fill;
+}
+.galeria1 .card4 .card__descripcion {
+  color: rgb(94, 86, 67);
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.galeria1 .card4 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.galeria1 .card4 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+.galeria1 .card5 {
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(165, 153, 116);
+}
+.galeria1 .card5 .card__img6 {
+  background-image: url(../img/anillo5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  object-fit: fill;
+}
+.galeria1 .card5 .card__descripcion {
+  color: rgb(94, 86, 67);
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.galeria1 .card5 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.galeria1 .card5 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+section {
+  display: grid;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 750px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .card1_ {
+    grid-area: 1/1/2/2;
+  }
+  .card2_ {
+    grid-area: 2/1/3/2;
+  }
+  .card3_ {
+    grid-area: 3/1/4/2;
+  }
+}
+.card1_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card1_ .card__img {
+  background-image: url(../img/collar1.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: cover;
+}
+.card1_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+}
+.card1_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card1_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card2_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card2_ .card__img2 {
+  background-image: url(../img/colla2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: contain;
+}
+.card2_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+}
+.card2_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card2_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card3_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card3_ .card__img3 {
+  background-image: url(../img/collar3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: contain;
+}
+.card3_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+}
+.card3_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card3_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card4_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card4_ .card__img4 {
+  background-image: url(../img/collar7.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: contain;
+}
+.card4_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+}
+.card4_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card4_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card5_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card5_ .card__img5 {
+  background-image: url(../img/collar5.jpg);
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: cover;
+}
+.card5_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card5_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card5_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card6_ {
+  min-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+  object-fit: cover;
+}
+.card6_ .card__img6 {
+  background-image: url(../img/collar6.jpg);
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  height: 530px;
+  object-fit: cover;
+}
+.card6_ .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card6_ .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card6_ .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+section {
+  display: grid;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .card_1 {
+    grid-area: 1/1/2/2;
+  }
+  .card_2 {
+    grid-area: 2/1/3/2;
+  }
+  .card_3 {
+    grid-area: 3/1/4/2;
+  }
+}
+.card_1 {
+  min-height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+}
+.card_1 .card__img {
+  background-image: url(../img/aretes1.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+.card_1 .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card_1 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card_1 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card_2 {
+  min-height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+}
+.card_2 .card__img2 {
+  background-image: url(../img/aretes2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  object-fit: fill;
+}
+.card_2 .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card_2 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card_2 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card_3 {
+  min-height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+}
+.card_3 .card__img3 {
+  background-image: url(../img/aretes3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  object-fit: fill;
+}
+.card_3 .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card_3 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card_3 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card_4 {
+  min-height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+}
+.card_4 .card__img4 {
+  background-image: url(../img/aretes5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  object-fit: fill;
+}
+.card_4 .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card_4 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card_4 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.card_5 {
+  min-height: 150px;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid rgb(165, 153, 116);
+}
+.card_5 .card__img5 {
+  background-image: url(../img/aretes8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  object-fit: fill;
+}
+.card_5 .card__descripcion {
+  color: #29261a;
+  padding: 20px;
+  text-align: center;
+  object-fit: fill;
+}
+.card_5 .card__button {
+  background-color: rgb(165, 153, 116);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 115px;
+  margin: 8%;
+  width: 50%;
+}
+.card_5 .card__button:hover {
+  background-color: #000;
+  width: 50%;
+}
+
+.navbar-brand {
+  color: #000;
+  text-shadow: 0 0 5px #000;
+}
+.navbar-brand span {
+  color: rgb(94, 86, 67);
+}
+
+form {
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid rgb(94, 86, 67);
+  margin: auto;
+  border-radius: 10px;
+  block-size: auto;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+h1 {
+  background-color: #333;
+  text-align: center;
+  color: #000;
+  text-transform: capitalize;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 5px;
+  background-color: rgb(94, 86, 67);
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(165, 153, 116);
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-brand {
+  color: rgb(165, 153, 116);
+  text-shadow: 0 0 5px #000;
+}
+.navbar-brand span {
+  color: rgb(94, 86, 67);
+}
+
+.principal h1 {
+  background-color: rgb(165, 153, 116);
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.principal h2 {
+  background-color: rgb(165, 153, 116);
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.nleft {
+  background-color: rgb(94, 86, 67);
+  height: 350px;
+}
+.nleft iframe {
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nright2 {
+  background-color: rgb(94, 86, 67);
+}
+.nright2 iframe {
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nright {
+  padding: 20px;
+  color: rgb(165, 153, 116);
+  background-color: rgb(94, 86, 67);
+}
+.nright h3 {
+  text-align: center;
+  color: #fff;
+}
+.nright p {
+  border: 7px solid rgb(165, 153, 116);
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 30px;
+  margin: 10px;
+  color: #fff;
+  background-color: rgb(111, 101, 79);
+  border-radius: 5px;
+}
+
+.ubi {
+  background-color: rgb(94, 86, 67);
+}
+.ubi h2 {
+  color: #fff;
+}
+.ubi p {
+  border: 7px solid rgb(165, 153, 116);
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 30px;
+  margin: 10px;
+  color: #fff;
+  background-color: rgb(111, 101, 79);
+  opacity: 0.5;
+  border-radius: 5px;
+}
+.ubi h3 {
+  text-align: center;
+  color: #fff;
+}
+
+body {
+  background-color: rgb(165, 153, 116);
+}
+
+h1 {
+  background-color: rgb(165, 153, 116);
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #29261a;
+  color: rgb(94, 86, 67);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+}
+footer i {
+  font-size: 50px;
+  color: rgb(94, 86, 67);
+  letter-spacing: 30px;
+}
+footer i:hover {
+  color: rgb(165, 153, 116);
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,267 @@
+$font1:#fff;
+$font2:#000;
+$font3:rgb(94, 86, 67);
+$font4:rgb(165, 153, 116);
+$font5:rgb(255, 255, 255);
+$font6:#29261a;
+$font7:rgb(111, 101, 79);
+  
+  section {
+    display: grid;
+    justify-content: space-between;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 750px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .card1_ {
+      grid-area: 1/1/2/2;
+    }
+    .card2_ {
+      grid-area: 2/1/3/2;
+    }
+    .card3_ {
+      grid-area: 3/1/4/2;
+    }
+  
+  }
+  
+  .card1_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+  
+   .card__img {
+    background-image: url(../img/collar1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: cover;
+  }
+
+   .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+    
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}
+  .card2_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+  
+   .card__img2 {
+    background-image: url(../img/colla2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: contain;
+
+  }
+ 
+   .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+   
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}
+  .card3_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+  
+   .card__img3 {
+    background-image: url(../img/collar3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: contain;
+  }
+ 
+   .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+   
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}
+  .card4_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+   .card__img4 {
+    background-image: url(../img/collar7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: contain;
+  }
+ 
+   .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}
+  .card5_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+  
+   .card__img5 {
+    background-image: url(../img/collar5.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: cover;
+  }
+ 
+    .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+    object-fit: fill;
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}
+  .card6_ {
+    min-height: 100px;
+    width: 100%;
+    background-color: $font1;
+    border: 5px solid $font4;
+    object-fit: cover;
+  
+   .card__img6 {
+    background-image: url(../img/collar6.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    object-fit: cover;
+  }
+
+   .card__descripcion {
+    color: $font6;
+    padding: 20px;
+    text-align: center;
+    object-fit: fill;
+  }
+   .card__button {
+    background-color: $font4;
+    color: $font1;
+    text-decoration: none;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 115px;
+    margin: 8%;
+    width: 50%;
+  }
+   .card__button:hover {
+    background-color: #000;
+    width: 50%;
+  }
+}

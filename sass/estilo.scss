@@ -1,0 +1,169 @@
+@import '../sass/_anillo.scss';
+@import '../sass/_collares.scss';
+@import '../sass/_aretes.scss';
+@import '../sass/_formularios.scss';
+$font1:#fff;
+$font2:#000;
+$font3:rgb(94, 86, 67);
+$font4:rgb(165, 153, 116);
+$font5:#333;
+$font5:rgb(255, 255, 255);
+$font6:#29261a;
+$font7:rgb(111, 101, 79);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//inicio ventana principal
+.carousel-inner{
+    img{
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+  }
+
+  header{
+    height: 80px;
+    width: 100%;
+    background-color:$font4 ;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-brand{
+    color:$font4;
+    text-shadow: 0 0 5px $font2;
+    span{
+        color: $font3; 
+    }
+}
+.principal{
+h1{
+    background-color: $font4;
+    text-align: center;
+    color: $font1;
+    text-transform: capitalize;
+    padding: 20px;
+    margin-bottom: 0;
+
+}
+h2{
+    background-color: $font4;
+    text-align: center;
+    color: $font1;
+    text-transform: capitalize;
+    padding: 20px;
+    margin-bottom: 0;
+}
+}
+
+.nleft{
+    background-color: $font3;
+    height:350px;
+    iframe{
+        width: 100%;
+        height:350px;
+        background-position: center;
+        padding: 0%;
+        margin: 0%;
+    }
+
+}
+
+.nright2{
+    background-color: $font3;
+    iframe{
+        width: 100%;
+        height:350px;
+        background-position: center;
+        padding: 0%;
+        margin: 0%;
+    }  
+}
+.nright{
+    padding: 20px;
+    color: $font4;
+    background-color: $font3;
+h3{
+    text-align: center;
+    color: $font1;
+
+}
+p{
+    border: 7px solid $font4;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 30px;  
+    margin: 10px;
+    color:$font1;
+    background-color: $font7;
+    border-radius: 5px;
+}
+}
+.ubi{
+    background-color: $font3;
+    h2{
+        color: $font1;
+    }
+    p{
+        border: 7px solid $font4;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 30px;  
+        margin: 10px;
+        color:$font1;
+        background-color: $font7;
+        opacity: 0.5;
+        border-radius: 5px;
+    }
+    h3{
+        text-align: center;
+        color: $font1;
+    
+    }
+}
+
+body{
+    background-color: $font4;
+}
+h1{
+    background-color: $font4 ;
+    text-align: center;
+    color: $font1;
+    text-transform: capitalize;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+  
+
+footer{
+    background-color: $font6;
+    color: $font3;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    i{
+        font-size: 50px;
+        color: $font3;
+        letter-spacing: 30px;
+    }
+    i:hover{
+        color: $font4;
+    }
+}
+
+
+
+
+
