@@ -827,6 +827,7 @@ header {
 }
 .ubi h2 {
   color: #fff;
+  font-family: "Roboto Mono", monospace;
 }
 .ubi p {
   border: 7px solid rgb(165, 153, 116);
@@ -841,6 +842,7 @@ header {
 }
 .ubi h3 {
   text-align: center;
+  font-family: "Roboto Mono", monospace;
   color: #fff;
 }
 
