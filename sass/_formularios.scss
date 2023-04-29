@@ -6,6 +6,9 @@ $font4:rgb(165, 153, 116);
 $font5:#333;
 $font6:rgb(134, 123, 96);
 
+.fondo{
+    background-image: url(../img/pexels-monstera-7794399.jpg);
+}
 
 .navbar-brand{
     color:$font2;
@@ -24,6 +27,9 @@ form{
     block-size: auto; 
     margin-top: 50px;
     background-color: $font1;
+    margin: 5vh auto;
+
+   
 
 }
 h1{
@@ -33,6 +39,7 @@ h1{
     text-transform: capitalize;
     padding: 20px;
     margin-bottom: 20px;
+    
 }
 
 .btn{
@@ -42,5 +49,14 @@ h1{
 
    
 }
+.titulo h1{
+    background-color: $font3;
+}
 
-
+.col-md-6{
+    h1{
+        color: #000;
+        background-color: #fff;
+    }
+   
+}

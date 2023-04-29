@@ -48,7 +48,7 @@ $font7:rgb(111, 101, 79);
     background-size: cover;
     background-position: center;
     height: 530px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
    .card__descripcion {
@@ -70,7 +70,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }
@@ -109,7 +109,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }
@@ -147,7 +147,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }
@@ -183,7 +183,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }
@@ -200,7 +200,7 @@ $font7:rgb(111, 101, 79);
     background-size: cover;
     background-position: center;
     height: 530px;
-    object-fit: cover;
+    object-fit: contain;
   }
  
     .card__descripcion {
@@ -222,7 +222,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }
@@ -239,7 +239,7 @@ $font7:rgb(111, 101, 79);
     background-size: cover;
     background-position: center;
     height: 530px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
    .card__descripcion {
@@ -261,7 +261,7 @@ $font7:rgb(111, 101, 79);
     width: 50%;
   }
    .card__button:hover {
-    background-color: #000;
+    background-color: $font3;
     width: 50%;
   }
 }

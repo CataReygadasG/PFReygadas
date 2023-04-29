@@ -23,6 +23,7 @@ $font7:rgb(111, 101, 79);
         height: 600px;
         margin-bottom: 0;
         border-radius: 0;
+        object-fit: fill;
     }
   }
 
@@ -73,6 +74,7 @@ h2{
         background-position: center;
         padding: 0%;
         margin: 0%;
+        display: flex;
     }
 
 }
@@ -150,18 +152,31 @@ footer{
     background-color: $font6;
     color: $font3;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    color: $font4;
     font-family: 'Oswald', sans-serif;
     padding: 20px;
+    
     i{
         font-size: 50px;
         color: $font3;
         letter-spacing: 30px;
+        
     }
     i:hover{
         color: $font4;
+        
     }
+    .redes{
+        a{
+            text-decoration: none;
+        }
+       
+    }
+   
+  
 }
+
 
 
 
