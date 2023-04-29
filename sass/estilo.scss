@@ -2,6 +2,7 @@
 @import '../sass/_collares.scss';
 @import '../sass/_aretes.scss';
 @import '../sass/_formularios.scss';
+
 $font1:#fff;
 $font2:#000;
 $font3:rgb(94, 86, 67);
@@ -50,7 +51,7 @@ h1{
     background-color: $font4;
     text-align: center;
     color: $font1;
-    text-transform: capitalize;
+    font-family: 'Roboto Mono', monospace;
     padding: 20px;
     margin-bottom: 0;
 
@@ -59,7 +60,7 @@ h2{
     background-color: $font4;
     text-align: center;
     color: $font1;
-    text-transform: capitalize;
+    font-family: 'Roboto Mono', monospace;
     padding: 20px;
     margin-bottom: 0;
 }
@@ -96,6 +97,7 @@ h2{
 h3{
     text-align: center;
     color: $font1;
+    font-family: 'Roboto Mono', monospace;
 
 }
 p{
@@ -139,7 +141,7 @@ h1{
     background-color: $font4 ;
     text-align: center;
     color: $font1;
-    text-transform: capitalize;
+    font-family: 'Roboto Mono', monospace;
     padding: 20px;
     margin-bottom: 20px;
 }
