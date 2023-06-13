@@ -35,7 +35,6 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card1 .card__img {
-  background-image: url(../img/1.jpg);
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -72,7 +71,6 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card2 .card__img2 {
-  background-image: url(../img/2.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -108,7 +106,6 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card3 .card__img3 {
-  background-image: url(../img/4.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -145,7 +142,6 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card4 .card__img4 {
-  background-image: url(../img/anillo1.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -182,7 +178,6 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card5 .card__img6 {
-  background-image: url(../img/anillo5.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;

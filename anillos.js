@@ -44,7 +44,7 @@ productos.forEach((productoSolo)=>{
   let contenedor = document.createElement("div")
   contenedor.innerHTML = `
   <article class="card1">
-  <div class="card__img" src= "${productoSolo.imagen}"></div>
+  <div class="card__img" src="${productoSolo.imagen}" ></div>
   <p class="card__descripcion">${productoSolo.nombre}</p>
   <p class="card__descripcion">${productoSolo.precio}</p>
   <a href="#" class="card__button">Ver más</a>
