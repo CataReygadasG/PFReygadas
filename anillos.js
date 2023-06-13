@@ -16,19 +16,19 @@ const productos = [
         id: 3,
         nombre: "Anillo de brillantes recubierto con oro blanco",
         precio: 750000,
-        imagen: "./img/3.jpg",
+        imagen: "./img/4.jpg",
     },
     {
         id: 4,
         nombre: "Argollas de compromiso de oro de 14k",
         precio: 750000,
-        imagen: "./img/4.jpg",
+        imagen: "./img/anillo1.jpg",
     },
     {
         id: 5,
         nombre: "Anillo con diamante al medio y brillantes de plata",
         precio: 350000,
-        imagen: "./img/5.jpg",
+        imagen: "./img/anillo5.jpg",
     }
 ]
 
