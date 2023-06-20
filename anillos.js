@@ -1,4 +1,6 @@
-console.log("hola probando proyeto joyas")
+console.log("hola probando proyecto joyas");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container")
 const productos = [
     {
         id: 1,
@@ -31,10 +33,22 @@ const productos = [
         imagen: "../img/anillo5.jpg",
     }
 ]
+let carritoCompras = []
 
-console.log(productos)
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+//Almacenar producto por producto
+for (const producto of productos) {
+    guardarLocal(producto.id, JSON.stringify(producto));
+}
+// o almacenar array completo
+guardarLocal("listaProductos", JSON.stringify(productos));
+let anillo1 = JSON.parse(localStorage.getItem("1"))
+console.log(anillo1)
+
 
 let contenedorProductos = document.getElementById("contenedorProductos")
+
+
 console.log(contenedorProductos)
 productos.forEach((productoSolo)=>{
   console.log(productoSolo.id)
@@ -47,10 +61,67 @@ productos.forEach((productoSolo)=>{
   <img class="card__img" src="${productoSolo.imagen}" ></img>
   <p class="card__descripcion">${productoSolo.nombre}</p>
   <p class="card__descripcion">${productoSolo.precio}</p>
-  <a href="#" class="card__button">Ver más</a>
+  <a href="#" id="botonComprar" class="card__button">Comprar</a>
   `
+  
  contenedorProductos.append(contenedor)
+ let miDiv = document.createElement("div")
 
-})
+ let botonComprar = document.getElementById("botonComprar")
+  botonComprar.addEventListener("click", () =>{
+    carritoCompras.push({
+        id: productoSolo.id,
+        imagen: productoSolo.imagen,
+        nombre: productoSolo.nombre,
+        precio : productoSolo.precio,
 
-let miDiv = document.createElement("div")
+    });
+    console.log(carritoCompras)
+
+   
+    
+});
+
+});
+verCarrito.addEventListener("click", ()=>{
+    console.log("productos carrito de compras")
+    // const modalHeader = document.createElement("div");
+    //     modalHeader.innerHTML = `
+    //     <h1 class = "modal-header-title">Carrito</h1>
+    //     `;
+    //     modalContainer.append(modalHeader);
+
+    //     const modalbutton = document.createElement("h1")
+    //     modalbutton.innerHTML = "x";
+    //     modalbutton.className = "modal-header-button"
+    
+    //     modalHeader.append(modalbutton);
+
+    //     carritoCompras.forEach((productoSolo)=>{
+    //         let carritoContent = document.createElement("div")
+    //         carritoContent.className = "modal-content"
+    //         carritoContent.innerHTML = `
+    //         <article class="card1">
+    //         <img class="card__img" src="${productoSolo.imagen}" ></img>
+    //         <p class="card__descripcion">${productoSolo.nombre}</p>
+    //         <p class="card__descripcion">${productoSolo.precio}</p>
+    //         <a href="#" id="botonComprar" class="card__button">Comprar</a>
+    //         `;
+    //         modalContainer.append(carritoContent)
+        // })
+
+    
+
+});
+
+ 
+//let miDiv = document.createElement("div")
+
+//let botonComprar = document.getElementById("botonComprar")
+
+//botonComprar.addEventListener("click", agregarCarrito)
+//function agregarCarrito(){
+ //   console.log("Producto agregado al carrito")
+    
+//}
+

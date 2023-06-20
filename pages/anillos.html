@@ -33,6 +33,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="../css/estilo.css" />
     <title>Catálogo de anillos</title>
   </head>
@@ -76,6 +79,7 @@
     <!-- navbar termina -->
     <!-- Empieza catalogo de anillos -->
     <h1>Catálogo de anillos</h1>
+    <h1 class="ver-carrito" id="verCarrito">🛒</h1>
     <!-- BEM Bloque Elemento Modificador -->
     <!-- <section class="galeria1 mb-12 mr-sm-12"> -->
       <!-- 1.card inicia -->
@@ -130,8 +134,9 @@
         <a href="#" class="card__button">Ver más</a>
       </article>
       -->
-
       <!-- card fin -->
+      
+      <div id="modal-container" class="modal-container"></div>
     </section>
     <section id="contenedorProductos" class="galeria1 mb-12 mr-sm-12">
 
