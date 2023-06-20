@@ -90,7 +90,7 @@ verCarrito.addEventListener("click", ()=>{
     <h3 class="modal-header-title">Carrito de compras</h3>
     `;
     modalContainer.append(modalHeader)
-    const modalbutton = document.createElement("h1");
+    const modalbutton = document.createElement("h3");
     modalbutton.innerText = "x"
     modalbutton.className = "modal-header-button";
 
@@ -118,12 +118,5 @@ verCarrito.addEventListener("click", ()=>{
     totalBuying.innerHTML = `total a pagar: $ ${total} `;
     modalContainer.append(totalBuying)
 
-   
 });
  
-
- 
-
-
-
-
