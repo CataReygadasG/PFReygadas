@@ -61,13 +61,13 @@ productos.forEach((productoSolo)=>{
   <img class="card__img" src="${productoSolo.imagen}" ></img>
   <p class="card__descripcion">${productoSolo.nombre}</p>
   <p class="card__descripcion">${productoSolo.precio}</p>
-  <a href="#" id="botonComprar" class="card__button">Comprar</a>
+  <button id="${productoSolo.id}" class="card__button">Comprar</button>
   `
   
  contenedorProductos.append(contenedor)
- let miDiv = document.createElement("div")
+ //let miDiv = document.createElement("div")
 
- let botonComprar = document.getElementById("botonComprar")
+ let botonComprar = document.getElementById(`${productoSolo.id}`)
   botonComprar.addEventListener("click", () =>{
     carritoCompras.push({
         id: productoSolo.id,
@@ -77,51 +77,24 @@ productos.forEach((productoSolo)=>{
 
     });
     console.log(carritoCompras)
-
-   
     
 });
 
 });
 verCarrito.addEventListener("click", ()=>{
-    console.log("productos carrito de compras")
-    // const modalHeader = document.createElement("div");
-    //     modalHeader.innerHTML = `
-    //     <h1 class = "modal-header-title">Carrito</h1>
-    //     `;
-    //     modalContainer.append(modalHeader);
+    const modalHeader = document.createElement("div");
+    modalHeader.className = "modal-header";
+    modalHeader.innerHTML = `
+    <h1></h1>
+    `
 
-    //     const modalbutton = document.createElement("h1")
-    //     modalbutton.innerHTML = "x";
-    //     modalbutton.className = "modal-header-button"
-    
-    //     modalHeader.append(modalbutton);
-
-    //     carritoCompras.forEach((productoSolo)=>{
-    //         let carritoContent = document.createElement("div")
-    //         carritoContent.className = "modal-content"
-    //         carritoContent.innerHTML = `
-    //         <article class="card1">
-    //         <img class="card__img" src="${productoSolo.imagen}" ></img>
-    //         <p class="card__descripcion">${productoSolo.nombre}</p>
-    //         <p class="card__descripcion">${productoSolo.precio}</p>
-    //         <a href="#" id="botonComprar" class="card__button">Comprar</a>
-    //         `;
-    //         modalContainer.append(carritoContent)
-        // })
-
+ 
     
 
 });
 
  
-//let miDiv = document.createElement("div")
 
-//let botonComprar = document.getElementById("botonComprar")
 
-//botonComprar.addEventListener("click", agregarCarrito)
-//function agregarCarrito(){
- //   console.log("Producto agregado al carrito")
-    
-//}
+
 
