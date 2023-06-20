@@ -77,11 +77,16 @@ section{
         border: 5px solid $font4;
         .card__img2{
             //background-image: url(../img/2.jpg);
-            background-size: cover; 
-            background-position: center;
-            height: 400px;
-            object-fit: contain;
-        }
+        //     background-size: cover; 
+        //     background-position: center;
+        //     height: 400px;
+        //     object-fit: contain;
+        width: 100%;
+        background-size: cover; 
+        background-position: center;
+        height: 400px; 
+        object-fit: contain;     
+         }
 
         .card__descripcion{
             color: $font3;
@@ -114,11 +119,16 @@ section{
         border: 5px solid $font4; 
         .card__img3{
             //background-image: url(../img/4.jpg);
-             background-size: cover; 
+            //  background-size: cover; 
+            // background-position: center;
+            // height: 400px;
+            // object-fit: contain;
+            // font-family: 'Roboto Mono', monospace;
+            width: 100%;
+            background-size: cover; 
             background-position: center;
-            height: 400px;
-            object-fit: contain;
-            font-family: 'Roboto Mono', monospace;
+            height: 400px; 
+            object-fit: contain;     
         }
 
         .card__descripcion{
@@ -153,11 +163,16 @@ section{
         border: 5px solid $font4;
         .card__img4{
             //background-image: url(../img/anillo1.jpg);
+            // background-size: cover; 
+            // background-position: center;
+            // height: 400px;
+            // object-fit: contain;
+            // font-family: 'Roboto Mono', monospace;
+            width: 100%;
             background-size: cover; 
             background-position: center;
-            height: 400px;
-            object-fit: contain;
-            font-family: 'Roboto Mono', monospace;
+            height: 400px; 
+            object-fit: contain;     
         }
     
         .card__descripcion{
@@ -191,10 +206,15 @@ section{
         border: 5px solid $font4;  
         .card__img6{
             //background-image: url(../img/anillo5.jpg);
-            background-size: cover;
+            // background-size: cover;
+            // background-position: center;
+            // height: 400px; 
+            // object-fit: contain;
+            width: 100%;
+            background-size: cover; 
             background-position: center;
             height: 400px; 
-            object-fit: contain;
+            object-fit: contain;     
         }
     
         .card__descripcion{
@@ -287,3 +307,5 @@ section{
     text-align: center;
     padding-top: 20px;
 }
+
+

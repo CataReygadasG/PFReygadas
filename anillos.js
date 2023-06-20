@@ -6,7 +6,7 @@ const productos = [
         id: 1,
         nombre: "Anillo de oro blanco con brillante",
         precio: 890000,
-        imagen: "../img/1.jpg",
+        imagen: "../img/01.jpg",
     },
     {
         id: 2,
@@ -90,7 +90,7 @@ verCarrito.addEventListener("click", ()=>{
     <h3 class="modal-header-title">Carrito de compras</h3>
     `;
     modalContainer.append(modalHeader)
-    const modalbutton = document.createElement("h3");
+    const modalbutton = document.createElement("h1");
     modalbutton.innerText = "x"
     modalbutton.className = "modal-header-button";
 

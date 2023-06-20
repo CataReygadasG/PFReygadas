@@ -68,6 +68,7 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card2 .card__img2 {
+  width: 100%;
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -103,11 +104,11 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card3 .card__img3 {
+  width: 100%;
   background-size: cover;
   background-position: center;
   height: 400px;
   object-fit: contain;
-  font-family: "Roboto Mono", monospace;
 }
 .galeria1 .card3 .card__descripcion {
   color: rgb(94, 86, 67);
@@ -139,11 +140,11 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card4 .card__img4 {
+  width: 100%;
   background-size: cover;
   background-position: center;
   height: 400px;
   object-fit: contain;
-  font-family: "Roboto Mono", monospace;
 }
 .galeria1 .card4 .card__descripcion {
   color: rgb(94, 86, 67);
@@ -175,6 +176,7 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card5 .card__img6 {
+  width: 100%;
   background-size: cover;
   background-position: center;
   height: 400px;
