@@ -32,11 +32,14 @@ section {
   border: 5px solid rgb(165, 153, 116);
 }
 .galeria1 .card1 .card__img {
-  width: 100%;
   background-size: cover;
   background-position: center;
-  height: 400px;
   object-fit: contain;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 0;
+  border-radius: 0;
+  object-fit: fill;
 }
 .galeria1 .card1 .card__descripcion {
   color: rgb(94, 86, 67);

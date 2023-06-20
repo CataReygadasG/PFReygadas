@@ -38,11 +38,17 @@ section{
         border: 5px solid $font4;  
         .card__img{
             //background-image: url(../img/1.jpg);
+            // width: 100%;
+             background-size: cover; 
+             background-position: center;
+            // height: 400px; 
+            object-fit: contain;  
             width: 100%;
-            background-size: cover; 
-            background-position: center;
-            height: 400px; 
-            object-fit: contain;       
+            height: 600px;
+            margin-bottom: 0;
+            border-radius: 0;
+            object-fit: fill;
+           
         }
   
         .card__descripcion{
