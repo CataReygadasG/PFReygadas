@@ -4,7 +4,8 @@ const modalContainer = document.getElementById("modal-container");
 let carritoCompras = []
 const lista = document.getElementById('lista')
 console.log(lista)
-fetch('data.json')
+
+fetch("../data.json")
 .then((res) => res.json())
 
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
@@ -35,6 +36,7 @@ data.forEach((productoSolo)=>{
   <p class="card__descripcion">${productoSolo.precio}</p>
   <button id="${productoSolo.id}" class="card__button">Comprar</button>
   `
+
  lista.append(contenedor)
 })
 //boton comprar
