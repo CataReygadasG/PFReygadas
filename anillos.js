@@ -2,7 +2,8 @@ const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 //inicializa carrito vacio
 let carritoCompras = []
-const lista = document.getElementById('lista')
+//const lista = document.getElementById('lista')
+const lista = document.getElementById("contenedorProductos");
 //console.log(lista)
 
 fetch("../data.json")
