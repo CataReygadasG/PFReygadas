@@ -68,7 +68,7 @@ fetch("../data.json")
 				carritoContent.innerHTML =  `
 					<img class="imagen-carrito" src="${productoSolo.imagen}">
 					<p>${productoSolo.nombre}</p>
-					<p>${productoSolo.precio}</p>
+					<p>$ ${productoSolo.precio}</p>
 				`;
 				modalContainer.append(carritoContent)
 			});
