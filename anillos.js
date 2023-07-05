@@ -4,6 +4,7 @@ const modalContainer = document.getElementById("modal-container");
 let carritoCompras = [];
 //creamod la lista de productos
 const lista = document.getElementById("contenedorProductos");
+
 //llamada asincronica lista de anillos, me conecto
 fetch("../data.json")
 	.then((res) => res.json()) //res:respuesta la parcea
@@ -32,7 +33,12 @@ fetch("../data.json")
 					precio: productoSolo.precio,
 				});
 				console.log(carritoCompras);
+				guardarLocal("listaProductos", JSON.stringify(carritoCompras));
+				
 			});
+
+
+
 			botonComprar.addEventListener("click", llamarSweet);
 			function llamarSweet() {
 				Swal.fire({
@@ -82,37 +88,7 @@ fetch("../data.json")
 			modalContainer.append(totalBuying)
 		
 		});
-		const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-//no funcions
-		//Almacenar producto por producto
-for (const producto of lista) {
-    guardarLocal(producto.id, JSON.stringify(producto));
-}
-// o almacenar array completo
-guardarLocal("listaProductos", JSON.stringify(lista));
-let anillo1 = JSON.parse(localStorage.getItem("1"))
-console.log(anillo1)
 
 
-const eventoCarrito = (res) => {
-    return new Promise ((resolve, reject) => {
-		if(res === true){
-			resolve('Promesa resuelta')
-	} else{
-		reject('Promesa rechazada')
-}
-})
 
-}
-eventoCarrito(true)
-.then((response) => {
-	console.log(response)
-})
-eventoCarrito(false)
-.catch((error) => {
-	console.log(error)
-})
-
-
-		
 	});
