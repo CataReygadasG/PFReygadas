@@ -6,92 +6,113 @@ let carritoCompras = [];
 const lista = document.getElementById("contenedorProductos");
 //llamada asincronica lista de anillos, me conecto
 fetch("../data.json")
-  .then((res) => res.json()) //res:respuesta la parcea
-  .then((data) => {
-    //todo lo que trae data lo recorre y
-    //cada elemento lo almacena en productosSolo
-    data.forEach((productoSolo) => {
-      //dentro del contenedor esta la lista de anillos
-      let contenedor = document.createElement("div");
-      //mostrar los productos de lista
-      contenedor.innerHTML = `
+	.then((res) => res.json()) //res:respuesta la parcea
+	.then((data) => {//todo lo que trae data lo recorre y 
+		//cada elemento lo almacena en productosSolo
+		data.forEach((productoSolo) => {
+			//dentro del contenedor esta la lista de anillos
+			let contenedor = document.createElement("div");
+			//mostrar los productos de lista
+			contenedor.innerHTML = `
       <article class="card1">
       <img class="card__img" src="${productoSolo.imagen}" ></img>
       <p class="card__descripcion">${productoSolo.nombre}</p>
       <p class="card__descripcion">${productoSolo.precio}</p>
       <button id="${productoSolo.id}" class="card__button">Comprar</button>
       `;
-      lista.append(contenedor);
+			lista.append(contenedor);
 
-      let botonComprar = document.getElementById(`${productoSolo.id}`);
-      //al hacer click agrega prodcutos al carrito
-      botonComprar.addEventListener("click", () => {
-        carritoCompras.push({
-          id: productoSolo.id,
-          imagen: productoSolo.imagen,
-          nombre: productoSolo.nombre,
-          precio: productoSolo.precio,
-        });
-        console.log(carritoCompras);
-      });
-      botonComprar.addEventListener("click", llamarSweet);
-      function llamarSweet() {
-        Swal.fire({
-          title: "Producto Agredado 🛒",
-          icon: "success",
-          confirmButtonText: "Ok",
-        });
-      }
-    });
-    verCarrito.addEventListener("click", () => {
-      modalContainer.innerHTML = "";
-      modalContainer.style.display = "flex";
-      const modalHeader = document.createElement("div");
-      modalHeader.className = "modal-header";
-      modalHeader.innerHTML = `
+			let botonComprar = document.getElementById(`${productoSolo.id}`);
+			//al hacer click agrega prodcutos al carrito
+			botonComprar.addEventListener("click", () => {
+				carritoCompras.push({
+					id: productoSolo.id,
+					imagen: productoSolo.imagen,
+					nombre: productoSolo.nombre,
+					precio: productoSolo.precio,
+				});
+				console.log(carritoCompras);
+			});
+			botonComprar.addEventListener("click", llamarSweet);
+			function llamarSweet() {
+				Swal.fire({
+					title: "Producto Agredado 🛒",
+					icon: "success",
+					confirmButtonText: "Ok",
+				});
+			}
+		});
+		verCarrito.addEventListener("click", ()=>{
+			modalContainer.innerHTML = "";
+			modalContainer.style.display = "flex"
+			const modalHeader = document.createElement("div");
+			modalHeader.className = "modal-header";
+			modalHeader.innerHTML = `
 			<h3 class="modal-header-title">Carrito de compras</h3>
 			`;
-      //crea estructura carrito de compras
-      modalContainer.append(modalHeader);
+			//crea estructura carrito de compras
+			modalContainer.append(modalHeader)
 
-      const modalbutton = document.createElement("h3");
-      modalbutton.innerText = "x";
-      modalbutton.className = "modal-header-button";
-
-      modalbutton.addEventListener("click", () => {
-        modalContainer.style.display = "none";
-      });
-
-      modalHeader.append(modalbutton);
-
-      carritoCompras.forEach((productoSolo) => {
-        let carritoContent = document.createElement("div");
-        carritoContent.className = "modal-content";
-        carritoContent.innerHTML = `
+			const modalbutton = document.createElement("h3");
+			modalbutton.innerText = "x"
+			modalbutton.className = "modal-header-button";
+		
+			modalbutton.addEventListener("click", () => {
+				modalContainer.style.display = "none";
+			})
+		
+			modalHeader.append(modalbutton)
+		
+			carritoCompras.forEach((productoSolo)=>{
+				let carritoContent = document.createElement("div")
+				carritoContent.className = "modal-content"
+				carritoContent.innerHTML =  `
 					<img class="imagen-carrito" src="${productoSolo.imagen}">
 					<p>${productoSolo.nombre}</p>
 					<p>${productoSolo.precio}</p>
 				`;
-        modalContainer.append(carritoContent);
-      });
-      //aac:acomulador, el: representa a cada uno de los productos
-      const total = carritoCompras.reduce((acc, el) => acc + el.precio, 0);
+				modalContainer.append(carritoContent)
+			});
+				//aac:acomulador, el: representa a cada uno de los productos
+			const total = carritoCompras.reduce((acc, el) => acc + el.precio, 0);
+		
+			const totalBuying = document.createElement("div")
+			totalBuying.className = "total-comtent"
+			totalBuying.innerHTML = `total a pagar: $ ${total} `;
+			modalContainer.append(totalBuying)
+		
+		});
+		const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+//no funcions
+		//Almacenar producto por producto
+for (const producto of lista) {
+    guardarLocal(producto.id, JSON.stringify(producto));
+}
+// o almacenar array completo
+guardarLocal("listaProductos", JSON.stringify(lista));
+let anillo1 = JSON.parse(localStorage.getItem("1"))
+console.log(anillo1)
 
-      const totalBuying = document.createElement("div");
-      totalBuying.className = "total-comtent";
-      totalBuying.innerHTML = `total a pagar: $ ${total} `;
-      modalContainer.append(totalBuying);
-    });
-    const guardarLocal = (clave, valor) => {
-      localStorage.setItem(clave, valor);
-    };
-    //no funciona
-    //Almacenar producto por producto
-    for (const producto of lista) {
-      guardarLocal(producto.id, JSON.stringify(producto));
-    }
-    // o almacenar array completo
-    guardarLocal("listaProductos", JSON.stringify(lista));
-    let anillo1 = JSON.parse(localStorage.getItem("1"));
-    console.log(anillo1);
-  });
+
+const eventoCarrito = (res) => {
+    return new Promise ((resolve, reject) => {
+		if(res === true){
+			resolve('Promesa resuelta')
+	} else{
+		reject('Promesa rechazada')
+}
+})
+
+}
+eventoCarrito(true)
+.then((response) => {
+	console.log(response)
+})
+eventoCarrito(false)
+.catch((error) => {
+	console.log(error)
+})
+
+
+		
+	});
