@@ -34,11 +34,29 @@ fetch("../data.json")
 				});
 				console.log(carritoCompras);
 				guardarLocal("listaProductos", JSON.stringify(carritoCompras));
+
+				const eventoCarrito = (res) => {
+					return new Promise ((resolve, reject) => {
+						if(res === true){
+							resolve('Promesa resuelta')
+					} else{
+						reject('Promesa rechazada')
+				}
+				})
 				
-			});
-
-
-
+				}
+				eventoCarrito(true)
+				.then((response) => {
+					console.log(response)
+				})
+				eventoCarrito(false)
+				.catch((error) => {
+					console.log(error)
+				})
+						
+					});
+				
+	
 			botonComprar.addEventListener("click", llamarSweet);
 			function llamarSweet() {
 				Swal.fire({
