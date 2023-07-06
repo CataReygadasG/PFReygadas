@@ -1,8 +1,6 @@
-localStorage.clear()
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
-
-
+//localStorage.clear()
 let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
 //inicializa carrito vacio
 let carritoCompras = JSON.parse(localStorage.getItem("listaProductos")) || [];
