@@ -1,7 +1,8 @@
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 
-let carritoCompras = [];
+let carritoCompras = JSON.parse(localStorage.getItem("listaProductos")) || [];
+let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
 const listaA = document.getElementById("contenedorProductos");
 
 fetch("../data2.json")
@@ -25,9 +26,10 @@ fetch("../data2.json")
 					  id: productoA.id,
 					  imagen: productoA.imagen,
 					  nombre: productoA.nombre,
-					  precio: productoSolo.precio,
+					  precio: productoA.precio,
 				  });
 				  console.log(carritoCompras);
+				  guardarLocal("listaProductos", JSON.stringify(carritoCompras));
 			  });
 			  botonComprar.addEventListener("click", llamarSweet);
 			  function llamarSweet() {
@@ -64,8 +66,8 @@ fetch("../data2.json")
 				carritoContent.className = "modal-content"
 				carritoContent.innerHTML =  `
 					<img class="imagen-carrito" src="${productoSolo.imagen}">
-					<p>${productoSolo.nombre}</p>
-					<p>${productoSolo.precio}</p>
+					<p>${productoA.nombre}</p>
+					<p>${productoA.precio}</p>
 				`;
 				modalContainer.append(carritoContent)
 			});
