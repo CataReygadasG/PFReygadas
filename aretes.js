@@ -65,7 +65,7 @@ fetch("../data2.json")
 				let carritoContent = document.createElement("div")
 				carritoContent.className = "modal-content"
 				carritoContent.innerHTML =  `
-					<img class="imagen-carrito" src="${productoSolo.imagen}">
+					<img class="imagen-carrito" src="${productoA.imagen}">
 					<p>${productoA.nombre}</p>
 					<p>${productoA.precio}</p>
 				`;
