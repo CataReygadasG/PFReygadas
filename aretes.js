@@ -59,13 +59,13 @@ fetch("../data2.json")
 		
 			modalHeader.append(modalbutton)
 		
-			carritoCompras.forEach((productoA)=>{
+			carritoCompras.forEach((productoSolo)=>{
 				let carritoContent = document.createElement("div")
 				carritoContent.className = "modal-content"
 				carritoContent.innerHTML =  `
-					<img class="imagen-carrito" src="${productoA.imagen}">
-					<p>${productoA.nombre}</p>
-					<p>${productoA.precio}</p>
+					<img class="imagen-carrito" src="${productoSolo.imagen}">
+					<p>${productoSolo.nombre}</p>
+					<p>${productoSolo.precio}</p>
 				`;
 				modalContainer.append(carritoContent)
 			});
