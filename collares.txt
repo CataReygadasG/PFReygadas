@@ -75,12 +75,57 @@
     </nav>
     <!-- navbar termina -->
     <h1>Catálogo de collares</h1>
-    <section id="contenedorProductos" class="galeria1 mb-12 mr-sm-12">
-    </section>
-    <!-- contenedor de productos -->
-    <div id="modal-container" class="modal-container"></div>
 
-   
+    <section>
+      <!-- 1.card inicia -->
+      <article class="card1_">
+        <div class="card__img"></div>
+        <p class="card__descripcion">Collar de flor</p>
+        <p class="card__descripcion">$350.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+      <!-- 2.card inicia -->
+      <article class="card2_">
+        <div class="card__img2"></div>
+        <p class="card__descripcion">Collar punto de luz</p>
+        <p class="card__descripcion">$380.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+      <!-- 3.card inicia -->
+      <article class="card3_">
+        <div class="card__img3"></div>
+        <p class="card__descripcion">Collar de corazón</p>
+        <p class="card__descripcion">$250.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+      <!-- 4.card inicia -->
+      <article class="card4_">
+        <div class="card__img4"></div>
+        <p class="card__descripcion">Collar de oro con diseño</p>
+        <p class="card__descripcion">$550.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+      <!-- 5.card inicia -->
+      <article class="card5_">
+        <div class="card__img5"></div>
+        <p class="card__descripcion">Collar con diseño de cuarzo</p>
+        <p class="card__descripcion">$250.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+      <!-- 6.card inicia -->
+      <article class="card6_">
+        <div class="card__img6"></div>
+        <p class="card__descripcion">Collar letras love</p>
+        <p class="card__descripcion">$350.000 CLP</p>
+        <a href="#" class="card__button">Ver más</a>
+      </article>
+      <!-- card fin -->
+    </section>
     <!-- inicio footer -->
     <footer>
       <p>Nos puedes encontrar en nuestras redes sociales</p>
