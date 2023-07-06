@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pagina de carrito de compras de joyas" />
-    <meta name="keywords" content="nombre, pago, entrega" />
+    <meta
+      name="description"
+      content="Pagina para realizar el formulario de contacto"
+    />
+    <meta name="keywords" content="nombre, correo, ciudad, producto, mensaje" />
     <meta name="city" content="Antofagasta" />
     <meta name="country" content="Chile" />
     <link
@@ -34,15 +37,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/estilo.css" />
-    <title>Compras</title>
+    <title>Contáctanos</title>
   </head>
-  <body class="fondo">
+  <body>
     <!-- navbar inicia -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <!-- Brand(logo) -->
-
       <div class="navbar-brand">Joyería <span>Sagitario</span></div>
-
       <button
         class="navbar-toggler"
         type="button"
@@ -75,8 +75,73 @@
         </ul>
       </div>
     </nav>
-    <!-- navbar termina -->
 
+    <!-- navbar termina -->
+    <main class="contacto">
+      <form class="col-md-6">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre Completo</label>
+          <input
+            type="name"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Correo</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="nombre@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Ciudad</label>
+          <select class="form-control">
+            <option>Antofagasta</option>
+            <option>Santiago</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Producto</label>
+          <select class="form-control">
+            <option>Anillo</option>
+            <option>Collar</option>
+            <option>Aretes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn mb-2">Enviar</button>
+      </form>
+    </main>
+    <!-- Termino formulario -->
+    <footer>
+      <p>Nos puedes encontrar en nuestras redes sociales</p>
+      <div class="redes">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/joyeriasagitarioantofagasta/"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/joyeriasagitarioantofagasta.sagitario?mibextid=LQQJ4d"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -92,73 +157,5 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
-    <!-- Inicio formulario -->
-
-    <form class="col-md-6">
-      <div class="form-group row">
-        <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
-        <div class="col-sm-10">
-          <input
-            type="nombre"
-            class="form-control"
-            id="inputName"
-            placeholder="Nombre"
-          />
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Tipo de Pago</legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="gridRadios1"
-                value="option1"
-                checked
-              />
-              <label class="form-check-label" for="gridRadios1">
-                Credito
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="gridRadios2"
-                value="option2"
-              />
-              <label class="form-check-label" for="gridRadios2">
-                Webpay/Onepay
-              </label>
-            </div>
-          </div>
-        </div>
-      </fieldset>
-
-      <div class="form-group row">
-        <div class="col-sm-2">Tipo de entrega</div>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1" />
-            <label class="form-check-label" for="gridCheck1"> Domicilio </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1" />
-            <label class="form-check-label" for="gridCheck1">
-              Retiro en tienda
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn">Comprar</button>
-        </div>
-      </div>
-    </form>
   </body>
 </html>

@@ -76,55 +76,38 @@
       </div>
     </nav>
 
-    <!-- navbar termina -->
-    <main class="contacto">
-      <form class="col-md-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nombre Completo</label>
-          <input
-            type="name"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Nombre"
-          />
+<!-- inicio -->
+<div class="container">
+  <div class="form-content">
+    <!-- <h1 id="title">Registro</h1> -->
+    <form>
+      <div class="input-group">
+        <div class="input-field" id="nameInput">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Nombre">
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Correo</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="nombre@gmail.com"
-          />
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Correo">
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Ciudad</label>
-          <select class="form-control">
-            <option>Antofagasta</option>
-            <option>Santiago</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Producto</label>
-          <select class="form-control">
-            <option>Anillo</option>
-            <option>Collar</option>
-            <option>Aretes</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Mensaje</label>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
+      </div>
+      <div class="input-field">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Contraseña">
+      
+      <p>Olvidaste tu contraseña <a href="#">click aqui</a></p>
+    </div>
+    <div class="btn-field">
+      <button id="signUp" type="button">Registro</button>
+      <button id="signIn" type="button" class="disable">Login</button>
+      
 
-        <button type="submit" class="btn mb-2">Enviar</button>
-      </form>
-    </main>
-    <!-- Termino formulario -->
+    </div>
+    </form>
+  </div>
+</div>
+
+
     <footer>
       <p>Nos puedes encontrar en nuestras redes sociales</p>
       <div class="redes">
@@ -157,5 +140,6 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="../contacto.js"></script>
   </body>
 </html>
