@@ -1,7 +1,11 @@
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
+
+
+let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
 //inicializa carrito vacio
-let carritoCompras = [];
+let carritoCompras = JSON.parse(localStorage.getItem("listaProductos")) || [];
+
 //creamod la lista de productos
 const lista = document.getElementById("contenedorProductos");
 
@@ -14,12 +18,11 @@ fetch("../data.json")
 			//dentro del contenedor esta la lista de anillos
 			let contenedor = document.createElement("div");
 			//mostrar los productos de lista
-			//NO ME TOMA SIGNO PESO
 			contenedor.innerHTML = `
       <article class="card1">
       <img class="card__img" src="${productoSolo.imagen}" ></img>
       <p class="card__descripcion">${productoSolo.nombre}</p>
-      <p class="card__descripcion">$ ${productoSolo.precio} CLP</p> 
+      <p class="card__descripcion">${productoSolo.precio}</p>
       <button id="${productoSolo.id}" class="card__button">Comprar</button>
       `;
 			lista.append(contenedor);
