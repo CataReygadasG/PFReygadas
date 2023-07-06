@@ -18,7 +18,7 @@ fetch("../data.json")
       <article class="card1">
       <img class="card__img" src="${productoSolo.imagen}" ></img>
       <p class="card__descripcion">${productoSolo.nombre}</p>
-      <p class="card__descripcion">${productoSolo.precio}</p>
+      <p class="card__descripcion">$ ${productoSolo.precio} CLP</p>
       <button id="${productoSolo.id}" class="card__button">Comprar</button>
       `;
 			lista.append(contenedor);
