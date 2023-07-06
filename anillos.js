@@ -33,7 +33,6 @@ fetch("../data.json")
 					precio: productoSolo.precio,
 				});
 				console.log(carritoCompras);
-				//almacenamos los productos del carrito de compras, llamando a carritoCompras=[]
 				guardarLocal("listaProductos", JSON.stringify(carritoCompras));
 				
 			});
