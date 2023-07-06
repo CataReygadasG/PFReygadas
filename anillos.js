@@ -14,11 +14,12 @@ fetch("../data.json")
 			//dentro del contenedor esta la lista de anillos
 			let contenedor = document.createElement("div");
 			//mostrar los productos de lista
+			//NO ME TOMA SIGNO PESO
 			contenedor.innerHTML = `
       <article class="card1">
       <img class="card__img" src="${productoSolo.imagen}" ></img>
       <p class="card__descripcion">${productoSolo.nombre}</p>
-      <p class="card__descripcion">$ ${productoSolo.precio} CLP</p>
+      <p class="card__descripcion">$ ${productoSolo.precio} CLP</p> 
       <button id="${productoSolo.id}" class="card__button">Comprar</button>
       `;
 			lista.append(contenedor);
