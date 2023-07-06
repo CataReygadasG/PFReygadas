@@ -15,9 +15,9 @@ fetch("../data3.json")
 		<img class="card__img" src="${productoC.imagen}" ></img>
 		<p class="card__descripcion">${productoC.nombre}</p>
 		<p class="card__descripcion">${productoC.precio}</p>
-		<button id="${productoA.id}" class="card__button">Comprar</button>
+		<button id="${productoC.id}" class="card__button">Comprar</button>
 		`;
-			  listaA.append(contenedorA);
+			  listaA.append(contenedorC);
   
 			  let botonComprar = document.getElementById(`${productoC.id}`);
 			  //al hacer click agrega prodcutos al carrito
