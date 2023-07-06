@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Aretes de oro dobles",
+        "precio": 350000,
+        "imagen": "../img/aretes1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Aretes de oro redondo",
+        "precio": 250000,
+        "imagen": "../img/aretes2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Arete de oro",
+        "precio": 250000,
+        "imagen": "../img/aretes3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Arete de oro triangula",
+        "precio": 250000,
+        "imagen": "../img/aretes5.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Aretes con rubi",
+        "precio": 350000,
+        "imagen": "../img/aretes8.jpg"
+    }
+]
