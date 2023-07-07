@@ -763,19 +763,18 @@ section {
 }
 
 .form-content {
-  height: 70%;
-  width: 100%;
-  max-width: 450px;
+  height: 50%;
+  width: 55%;
   background-color: #fff;
   padding: 50px 60px 70px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 5px solid rgb(94, 86, 67);
 }
 
 .h1::after {
   content: "";
-  width: 30px;
+  width: 10px;
   height: 4px;
   border-radius: 3px;
   background: rgb(134, 123, 96);
@@ -788,68 +787,79 @@ section {
   background-color: #fff;
   margin: 15px 0;
   border-radius: 3px;
+  text-align: center;
   display: flex;
   align-items: center;
   transition: max-height 0.5s;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .input {
-  width: 100%;
   background: transparent;
   border: 0;
   outline: none;
-  padding: 18px 15px;
 }
 
 .input::placeholder {
   color: #333;
   text-align: center;
-  width: 100%;
+  width: 80%;
 }
 
 .fa-envelope {
   text-align: center;
-  width: 100%;
 }
 
 .input-field i {
   margin-left: #333;
-  font-size: 150px;
+  font-size: 20px;
 }
 
 form p {
   color: #000;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 form p a {
   color: #04BD7D;
-  margin-left: 5px;
+  text-align: center;
 }
 
 .btn-field {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border: #000;
 }
 
 .btn-field button {
-  flex-basis: 48%;
+  flex-basis: 30%;
   font-size: 16px;
-  background-color: #04BD7D;
-  height: 40px;
+  background-color: rgb(134, 123, 96);
+  color: #fff;
+  height: 50px;
   border-radius: 10px;
   border: 0;
   outline: 0;
   cursor: pointer;
   transition: background 1s;
+  border: #000;
 }
 
 .btn-field button.disable {
-  background-color: #fff;
-  color: #333;
+  flex-basis: 20%;
+  flex-basis: 30%;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  border: #000;
 }
 
 * {
