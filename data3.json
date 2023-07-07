@@ -9,7 +9,7 @@
         "id": 2,
         "nombre": "Collar punto de luz",
         "precio": 380000,
-        "imagen": "../img/collar2.jpg"
+        "imagen": "../img/colla2.jpg"
     },
     {
         "id": 3,
@@ -20,13 +20,13 @@
     {
         "id": 4,
         "nombre": "Collar con diseño de cuarzo",
-        "precio": 550000,
-        "imagen": "../img/collar4.jpg"
+        "precio": 250000,
+        "imagen": "../img/collar5.jpg"
     },
     {
         "id": 5,
-        "nombre": "Aretes con rubi",
+        "nombre": "Collar letras love",
         "precio": 350000,
-        "imagen": "../img/collar5.jpg"
+        "imagen": "../img/.jpg"
     }
 ]
