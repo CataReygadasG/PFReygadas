@@ -847,10 +847,6 @@ form p a {
   transition: background 1s;
 }
 
-.input-group {
-  height: 10px;
-}
-
 .btn-field button.disable {
   background-color: #fff;
   color: #333;
