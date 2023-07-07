@@ -9,7 +9,7 @@
         "id": 2,
         "nombre": "Collar punto de luz",
         "precio": 380000,
-        "imagen": "../img/colla2.jpg"
+        "imagen": "../img/collar2.jpg"
     },
     {
         "id": 3,
@@ -27,6 +27,6 @@
         "id": 5,
         "nombre": "Collar letras love",
         "precio": 350000,
-        "imagen": "../img/.jpg"
+        "imagen": "../img/collar6.jpg"
     }
 ]
