@@ -263,6 +263,14 @@ section {
   object-fit: contain;
 }
 
+.card__img {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  object-fit: contain;
+}
+
 .price {
   color: grey;
   font-size: 22px;
