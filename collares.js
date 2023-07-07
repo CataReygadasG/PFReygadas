@@ -3,7 +3,7 @@ const modalContainer = document.getElementById("modal-container");
 //localStorage.clear();
 let carritoCompras = JSON.parse(localStorage.getItem("listaProductos")) || [];
 let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
-const listaA = document.getElementById("contenedorProductos");
+const listaC = document.getElementById("contenedorProductos");
 
 fetch("../data3.json")
 .then((res) => res.json())
@@ -17,7 +17,7 @@ fetch("../data3.json")
 		<p class="card__descripcion">${productoC.precio}</p>
 		<button id="${productoC.id}" class="card__button">Comprar</button>
 		`;
-			  listaA.append(contenedorC);
+			  listaC.append(contenedorC);
   
 			  let botonComprar = document.getElementById(`${productoC.id}`);
 			  //al hacer click agrega prodcutos al carrito
