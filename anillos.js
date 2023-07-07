@@ -1,14 +1,10 @@
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 //localStorage.clear()
-let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
-//inicializa carrito vacio
 let carritoCompras = JSON.parse(localStorage.getItem("listaProductos")) || [];
-
-//creamod la lista de productos
+let guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
 const lista = document.getElementById("contenedorProductos");
 
-//llamada asincronica lista de anillos, me conecto
 fetch("../data.json")
 	.then((res) => res.json()) //res:respuesta la parcea
 	.then((data) => {//todo lo que trae data lo recorre y 
